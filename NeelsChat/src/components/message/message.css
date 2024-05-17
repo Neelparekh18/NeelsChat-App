@@ -1,0 +1,53 @@
+.messageContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+  }
+  
+  .messageContainer.sent {
+    align-items: flex-end;
+  }
+  
+  .messageContainer.received {
+    align-items: flex-start;
+  }
+  
+  .messageBox {
+    max-width: 60%;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #e1f5fe; /* Light Blue for received messages */
+    color: #333; /* Dark text for better readability */
+  }
+  
+  .messageContainer.sent .messageBox {
+    background-color: #c8e6c9; /* Light Green for sent messages */
+    color: #333; /* Dark text for better readability */
+  }
+  
+  .messageContainer.received .messageBox {
+    background-color: #fff; /* White background for received messages */
+  }
+  
+  .messageText {
+    margin: 0;
+    word-wrap: break-word;
+  }
+  
+  .messageInfo {
+    font-size: 0.75em;
+    color: #777; /* Soft gray color for message info */
+    margin-top: 5px;
+  }
+  
+  .messageUser {
+    font-weight: bold;
+    margin-right: 5px;
+    color: #00796b; /* Teal color for username */
+  }
+  
+  .messageTime {
+    font-style: italic;
+    color: #00796b; /* Teal color for timestamp */
+  }
+  

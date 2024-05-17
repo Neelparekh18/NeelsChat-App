@@ -1,0 +1,76 @@
+.chatPage {
+    width: 100vw;
+    height: 100vh;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif; /* Consistent font family */
+  }
+  
+  .chatContainer {
+    width: 60%;
+    height: 70%;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    overflow: hidden; /* To handle overflow content */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .header {
+    background-color: crimson;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .chatBox {
+    flex-grow: 1;
+    padding: 1rem;
+    overflow-y: auto; 
+    background-color: #2c2c2c;
+    color: white;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+  }
+  
+  .inpBox {
+    display: flex;
+    height: 15%;
+    align-items: center;
+    border-top: 1px solid #444;
+  }
+  
+  #chatInp {
+    width: 80%;
+    border: none;
+    background-color: #1f1f1f;
+    padding: 1rem;
+    box-sizing: border-box;
+    outline: none;
+    color: white;
+    border-radius: 5px 0 0 5px; /* Rounded corners on the left side */
+    font-size: medium;
+  }
+  
+  #sendBtn {
+    background-color: crimson;
+    color: white;
+    border: none;
+    width: 20%;
+    transition: all 0.3s;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 0 5px 5px 0; /* Rounded corners on the right side */
+font-size: 1rem;  }
+  
+  #sendBtn:hover {
+    background-color: darkred;
+  }
+  
